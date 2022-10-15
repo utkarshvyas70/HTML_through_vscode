@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: white;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 2fr ;
+        }
+        .container .left_side {
+            position: relative;
+            background: navy;
+            padding: 40px;
+        }
+        .profiletext {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .profiletext .imgbx {
+            position: relative;
+            width:200px ;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profiletext .imgbx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profiletext h2 {
+            font-size: 20px;
+            margin-top:20px ;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4cm;
+        }
+        .profiletext h2 span {
+            font-size: 0.5cm;
+
+        }
+        .container .right_side {
+            position: relative;
+            background: navy;
+            padding: 40px;
+             
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profiletext">
+                <div class="imgBx">
+                    <img src="/sources/IMG_20220207_230417.png" height="300px">
+
+                </div>
+                <h2 style="color: white;">Utkarsh Vyas<br><span>Web Develpoer</span></h2>
+            </div>
+            <div class="contactInfo">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">+91 7665835400</span>
+                        
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">utkarshvyas70@gmail.com</span>
+                        
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text"><link rel="stylesheet" href="linked in"></span>
+                        
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">Kota, Rajasthan, India</span>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="right_side"></div>
+        </div>
+    </div>
+</body>
+</html>
