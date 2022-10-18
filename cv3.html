@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: white;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .container .left_side{
+            position: relative;
+            background: rgb(60, 60, 142);
+        }
+        .profiletext{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255, 255, 0.2);
+        }
+        .profiletext .imgBx{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profiletext .imgBx img{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profiletext h2{
+            font-size: 20px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4cm;
+        }
+        .profiletext h2 span{
+            font-size: 0.5cm;
+        }
+        .container .right_side{
+            position: relative;
+            background: white;
+            padding:40px ;
+        }
+        .contactInfo{
+            padding-top: 40px;
+        }
+        .title{
+            color: white;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+        .contactInfo ul{
+            position: relative;
+        }
+        .contactInfo ul li {
+            position: relative;
+            list-style:none ;
+            margin:10px 0  ;cursor: pointer;
+        }
+        .contactInfo ul li span{
+            color:white;
+            font-weight: 300;
+        }
+        .Education{
+            padding-top:40px ;
+        }
+        .Education ul{
+            position: relative;
+        }
+        .Education ul li{
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .Education ul li span{
+            color: white;
+            font-weight: 300;
+        }
+        .Languages{
+            padding-top: 40px;
+        }
+        .title{
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .Languages ul{
+            position: relative;
+        }
+        .Languages ul li{
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .Languages ul li span{
+            color:white;
+            font-weight: 300;
+        }
+        .percent{
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: black;
+            display: block;
+            margin-top: 5px;
+        }
+        .Languages.percent div{
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #03a9f4;
+        }
+        .container .right_side{
+            position: relative;
+            background: white;
+            padding:40px ;
+        }
+        .about{
+            margin-bottom :50px ;
+
+        }
+        .about:last-child{
+            margin-bottom: 0;
+        }
+        .title2 {
+            color:rgb(60, 60, 142);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        } 
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profiletext">
+                <div class="imgBx">
+                    <img src="/sources/IMG_20220207_230417.png"height="300px">
+
+                </div>
+                <h2 style="color: white;">Utkarsh Vyas<br><span>Data Scientist</span></h2>
+            </div>
+            <div class="contactInfo">
+                <h3 class="title">Contact Information</h3>
+                <ul>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">📞+91 7665835400</span>
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">📧 utkarshvyas70@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">🖇️ www.linkedin.com/me</span>
+                    </li>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">🏠 Kota, Rajasthan, India</span>
+                    </li>
+                </ul>
+            <div class="Education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">2018,2021:10th and 12th
+                            <br> Saint Johns school</span>
+                    </li><br>
+                    <li>
+                        <span class="icon"></span>
+                        <span class="text">2026:B.Tech in CSE
+                            <br>Lovely Professional University</span>
+                    </li>
+                </ul>
+            <div class="Languages">
+                <h3 class="title">Language</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent"></span>
+                            <div style="width:95% ;"></div>
+                    </li>
+                    <li>
+                        <span class="text">Hindi</span>
+                        <span class="percent"></span>
+                            <div style="width:95% ;"></div>
+                    </li>
+                </ul>
+            </div>
+            </div>    
+        
+            </div>
+        </div>
+        <div class="right_side">
+            <div class="about"></div>
+            <h2 class="title2">Profile</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum earum maiores porro accusantium dolore officia voluptates optio quas provident vero architecto, perferendis veniam nulla a corrupti dolores consequatur veritatis aperiam aspernatur unde rem iusto aliquid! Perspiciatis corrupti doloremque, sed, voluptate ullam vel aperiam aut rem quam odio, reiciendis repellat unde quae iusto enim nisi atque blanditiis. Fuga odit cum sequi et suscipit eveniet dolorum obcaecati, unde dolor eaque repellat delectus voluptate soluta repudiandae impedit aliquid quae culpa alias nihil quos quibusdam reprehenderit. Nulla sint sequi rerum est dolorem doloribus magni assumenda. Nam, aliquid consequuntur. Sint vero maxime fugiat iste.</p>
+        </div>
+            <div class="about">
+            <h2 class="title2">Experience</h2>    
+            </div>
+    </div>
+</body>
+</html>
