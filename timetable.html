@@ -34,14 +34,26 @@ body{
     border: 5px solid var(--primary-color);
      }
 .table{
-    border: 5px solid var(--primary-color);
-    padding:50px;
-    margin: 60px;
+    position: absolute;
+    z-index: 2;
+    left: 63%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 12px 5px rgba(32,32,32,.3);
+    
 }
-tr,th{
-        border: 2px  black;
-        border-radius: 50%;
-    }
+th,td{
+    background: #999999;
+}
+
+       
+
 
     </style>
 </head>
@@ -51,72 +63,91 @@ tr,th{
     </div>
     <div class="table">
         <table>
-            <caption style="color:white ;">Daily Routine</caption>
-                 <tr>
-                    <th style="color:white ;">Day</th>
-                    <th style="color:white ;">Part</th>
-                    <th style="color:white ;">Workout</th>
-            
-                 </tr>
-                 <tr>
-                    <th style="color:white ;">Monday</th>
-                    <th style="color:white ;">Chest</th>
-                    <th style="color:white ;"><pre>10 Incline Pushups
- 10 Decline Pushups
-                10 Normal Pushups               
-                    </pre></th>
-                </tr>
-                <tr>
-                    <th style="color:white ;">Tuesday</th>
-                    <th style="color:white ;">Shoulders</th>
-                    <th style="color:white ;"><pre>25 Pull ups
-    10*4 Dumbbell Press
-                10*4 Shrugs              
-                     </pre></th>
-                <tr>
-                    <th style="color:white ;">Wednesday</th>
-                    <th style="color:white ;"><pre>Biceps and
-                        Triceps</pre> </th>
-                    <th style="color:white ;"><pre>      10*4 Bicep Curl
-    10*4 Rope Curl
-     10 Barbell Curls
-             10*4 Rope Pull Down
-     10*4 Bench Dips
-               10*4 Bar Dips               
-                    </pre></th>
-                <tr>
-                    <th style="color:white ;">Thrusday</th>
-                    <th style="color:white ;">Back</th>
-                    <th style="color:white ;"><pre>20 Pull Ups
-    Lat Pull Down
-         Back Contraction
-        Deadlifts      
-                    </pre></th>
-                 </tr>
-                 <tr>
-                    <th style="color:white ;">Friday</th>
-                    <th style="color:white ;">Full Body</th>
-                    <th style="color:white ;"><pre>Cross Trainer
-            Incline Running 20 min
-                20 min abs               
-                    </pre></th>
-                </tr>
-                <tr>
-                    <th style="color:white ;">Saturday</th>
-                    <th style="color:white ;">Legs</th>
-                    <th style="color:white ;"><pre>Running
-            Stair Ups
-                     Leg Press               
-                    </pre></th>
-                </tr>
-                <tr>
-                    <th style="color:white ;">Sunday</th>
-                    <th style="color:white ;">Moj Kaato</th>
-                    <th style="color:white ;"><pre>Khaao pio esh karo mitro            
-                    </pre></th>
-                </tr>
-            
-                </tr>
+            <caption style="color:white ;"><h1>Routine</h1> </caption>
+            <tr>
+                <th>Day</th>
+                <th>Part</th>
+                <th>Workout</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>Chest</td>
+                <td><pre>                  10 incline pushups
+                    10 decline pushups
+                    10 normal pushups
+                20*4 butterflies
+                 15*4 bench press</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>Shoulders</td>
+                <td><pre>         20*4 pullups
+                 10*4 Miliatry press
+      10*4 Shrugs
+              20*4 Side raises
+              20*4 Front raises</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>Arms</td>
+                <td><pre>           10*4 Bicep curls
+         10*4 Rope curls
+            10*4 Barbell curls
+                 10*4 Rope pull down
+         10*4 Bench dips</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Thrusday</td>
+                <td>Back</td>
+                <td><pre> 20 Pull ups
+             20*4 Lat pull down
+                  20*4 Back Contraction
+                  Deadlifts
+            Reverse butterflies</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>Full Body</td>
+                <td><pre>              30 min Zumba Class
+              10 min Cross trainer
+                     10 min inclined treadmill
+                    10 min normal treadmill
+                    Stretching</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>Legs</td>
+                <td><pre>Treadmill
+             Dumbbell Running
+            Leg press
+            Wight Pull
+            Calf Contraction</pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td>Rest</td>
+                <td><pre>Khaao 
+Pio
+ Esh
+ Karo
+  Mitro</pre>
+                </td>
+            </tr>
+
+    </div>             
         </table>
 </body>
 </html>
